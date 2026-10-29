@@ -1,4 +1,4 @@
-# 07 — Roteiro do seminário (02/12/2026)
+# 07 — Roteiro do seminário (data a confirmar)
 
 **15 minutos de apresentação + 5 minutos de arguição do professor.**
 Divida as falas entre os integrantes. Ensaie com cronômetro.
@@ -63,4 +63,4 @@ Com o VS Code aberto e fonte ampliada (Ctrl + `+`):
 - [ ] Jogo aberto offline no notebook da apresentação (e cópia num pendrive)
 - [ ] VS Code aberto em `js/calculo.js` com fonte grande
 - [ ] Slides com o link do repositório no último slide
-- [ ] Link da apresentação e arquivos enviados no Moodle até 01/12
+- [ ] Link da apresentação e arquivos enviados no Moodle até 25/11

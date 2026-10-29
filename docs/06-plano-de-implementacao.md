@@ -32,13 +32,13 @@ mostra mensagem em vez de travar.
 - [ ] Ativar o GitHub Pages e pôr o link no `README.md`
 - [ ] Revisar `js/calculo.js` para a projeção: comentários claros, sem código sobrando
 
-## Cronograma (entrega 01/12/2026)
+## Cronograma (entrega 25/11/2026)
 
 | Até | O quê |
 |---|---|
 | 05/11 | Etapas 0 e 1 |
-| 12/11 | Etapa 2 |
-| 19/11 | Etapas 3 e 4 |
-| 20/11 – 29/11 | Slides e ensaio |
-| **01/12** | Envio no Moodle (arquivos + link da apresentação) |
-| **02/12** | Seminário |
+| 08/11 | Etapa 2 |
+| 12/11 | Etapas 3 e 4 |
+| 13/11 – 23/11 | Slides e ensaio |
+| **25/11** | Envio no Moodle (arquivos + link da apresentação) |
+| _a confirmar_ | Seminário |

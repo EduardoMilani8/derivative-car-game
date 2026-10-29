@@ -13,8 +13,8 @@
 
 | O quê | Quando |
 |---|---|
-| Envio dos arquivos do jogo e do link da apresentação no Moodle | **01/12/2026** |
-| Seminário de apresentação | **02/12/2026** |
+| Envio dos arquivos do jogo e do link da apresentação no Moodle | **25/11/2026** (antecipado pelo professor em 29/10) |
+| Seminário de apresentação | _a confirmar com o professor_ |
 
 ### Requisitos do jogo
 
