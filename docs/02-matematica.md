@@ -155,4 +155,7 @@ A aceleração troca de sinal: o carro "acelera" e "freia" sem ninguém pisar em
 
 - Se `f(x)` não for um número finito (ex.: `1/x` em `x = 0`, `log(x)` com `x ≤ 0`), a simulação
   para e mostra: _"A função não está definida em x = …"_.
+- Como `x` avança de `1/60` em `1/60`, o carro quase nunca cai exatamente numa assíntota
+  (ex.: `1/(x − 5)`): ele só veria valores gigantes. Por isso a simulação também para se a
+  velocidade medida passar de `100` (constante `VMAX` em `js/simulacao.js`).
 - A simulação dá um passo de `Δt = 1/60 s` por quadro da tela.

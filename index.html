@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Radar da Derivada</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <div id="esquerda">
+    <div id="modos">
+      <button data-modo="0">Fase 1</button>
+      <button data-modo="1">Fase 2</button>
+      <button data-modo="2">Fase 3</button>
+      <button data-modo="livre">Modo livre</button>
+    </div>
+    <p id="instrucao"></p>
+
+    <canvas id="grafico" width="800" height="450"></canvas>
+
+    <!-- Controles das fases: os sliders são criados em principal.js -->
+    <div id="controlesFase"></div>
+
+    <!-- Controles do modo livre -->
+    <div id="controlesLivre">
+      <label>f(x) = <input id="campoFuncao" type="text" value="x^2/10" size="25"></label>
+      <label>Funções prontas:
+        <select id="funcoesProntas">
+          <option value="">(escolha)</option>
+          <option value="0.5*x">Reta</option>
+          <option value="x^2/10">Parábola</option>
+          <option value="-x^2/10">Parábola invertida</option>
+          <option value="sin(x)">Onda</option>
+          <option value="3*exp(-(x-5)^2/2)">Morro</option>
+        </select>
+      </label>
+      <label>Posição inicial do carro x₀ = <input id="campoX0" type="number" value="0" step="0.1" min="0" max="10"></label>
+    </div>
+
+    <div>
+      <button id="botaoLargar">Largar</button>
+      <button id="botaoReiniciar">Reiniciar</button>
+    </div>
+    <div id="mensagem"></div>
+  </div>
+
+  <div id="direita">
+    <h2>Telemetria</h2>
+    <pre id="telemetria"></pre>
+    <canvas id="graficoS" width="300" height="130"></canvas>
+    <canvas id="graficoV" width="300" height="130"></canvas>
+    <canvas id="graficoA" width="300" height="130"></canvas>
+  </div>
+
+  <script src="vendor/math.min.js"></script>
+  <script src="js/calculo.js"></script>
+  <script src="js/simulacao.js"></script>
+  <script src="js/desenho.js"></script>
+  <script src="js/principal.js"></script>
+</body>
+</html>
