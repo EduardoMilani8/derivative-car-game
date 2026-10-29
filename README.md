@@ -24,7 +24,7 @@ integral do comprimento de arco, e derivando essa distância obtemos a velocidad
 
 ## Rodando
 
-Abra `index.html` no navegador (funciona offline). Versão online: _link do GitHub Pages aqui_.
+Abra `index.html` no navegador (funciona offline). Versão online: https://eduardomilani8.github.io/derivative-car-game/
 
 Testes da parte matemática: `node tests/calculo.test.js`
 
