@@ -115,6 +115,11 @@ function desenharGrafico(canvas, estado, xMin, xMax, radares) {
 function desenharTelemetria(elemento, estado) {
   const f = estado.f, x = estado.x;
   const d = derivada(f, x);
+  // A medida Δs/Δt corresponde ao meio do último passo, e Δv/Δt a um passo atrás.
+  // A fórmula é calculada nesses mesmos pontos, para comparar o mesmo instante.
+  const n = estado.historico.length;
+  const xV = n > 0 ? x - C * DT / 2 : x;
+  const xA = n > 1 ? x - C * DT : x;
   elemento.textContent =
     "t         = " + numero(estado.t) + "\n" +
     "x         = " + numero(x) + "\n" +
@@ -123,9 +128,9 @@ function desenharTelemetria(elemento, estado) {
     "ângulo    = " + numero(Math.atan(d) * 180 / Math.PI, 1) + "°\n" +
     "s(t)      = " + numero(estado.s) + "\n" +
     "v medida  = " + numero(estado.v) + "\n" +
-    "v fórmula = " + numero(velocidadeExata(f, x)) + "\n" +
+    "v fórmula = " + numero(velocidadeExata(f, xV)) + "\n" +
     "a medida  = " + numero(estado.a) + "\n" +
-    "a fórmula = " + numero(aceleracaoExata(f, x));
+    "a fórmula = " + numero(aceleracaoExata(f, xA));
 }
 
 // Gráfico pequeno de uma grandeza (s, v ou a) em função do tempo

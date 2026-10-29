@@ -120,6 +120,11 @@ a_medida(t) ≈ [v_medida(t) − v_medida(t − Δt)] / Δt          Δt = 1/60 
 A telemetria mostra **as duas versões lado a lado** (medida × fórmula exata).
 Elas coincidem, o que **comprova** que `v = s′(t)` e `a = v′(t)`.
 
+Detalhe: `Δs/Δt` é a velocidade média do último passo, que corresponde ao **meio** do passo
+(`x − Δx/2`); e `Δv/Δt` compara duas dessas medidas, correspondendo a **um passo atrás**
+(`x − Δx`). Por isso a "fórmula" da telemetria é calculada nesses mesmos pontos. Assim as duas
+batem até a 3ª casa decimal (sobra no máximo 1 a 3 milésimos, erro da ordem de `Δt²`).
+
 ## 6. Exemplos resolvidos (para slides e testes)
 
 ### Exemplo A — reta `f(x) = √3·x`
